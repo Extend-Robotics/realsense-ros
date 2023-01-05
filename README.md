@@ -1,3 +1,11 @@
+# Extend Robotics changes
+
+See [wiki](https://github.com/Extend-Robotics/realsense-ros/wiki/D405-support-on-ROS1) for information about D405 support with ROS1
+
+The changes are in `extend` branch (default)
+
+------------------------------------
+
 # ROS Wrapper for Intel&reg; RealSense&trade; Devices
 These are packages for using Intel RealSense cameras (D400 series SR300 camera and T265 Tracking Module) with ROS.
 
