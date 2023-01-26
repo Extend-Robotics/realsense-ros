@@ -4,6 +4,17 @@ See [wiki](https://github.com/Extend-Robotics/realsense-ros/wiki/D405-support-on
 
 The changes are in `extend` branch (default)
 
+## `roslaunch` for D405
+
+Depth and RGB resolutions *have to* be manually set to same value for D405
+
+```bash
+# D405 1280x720
+roslaunch realsense2_camera rs_camera.launch depth_width:=1280 color_width:=1280 depth_height:=720 color_height:=720
+# D405 848x480
+roslaunch realsense2_camera rs_camera.launch depth_width:=848 color_width:=848 depth_height:=480 color_height:=480
+```
+
 ------------------------------------
 
 # ROS Wrapper for Intel&reg; RealSense&trade; Devices
