@@ -4,6 +4,13 @@ See [wiki](https://github.com/Extend-Robotics/realsense-ros/wiki/D405-support-on
 
 The changes are in `extend` branch (default)
 
+## librealsense2
+
+See `scripts/libuvc_installation.sh` for script
+- installing 2.51.1 with RSUSB backend.
+- non ideal but should work regardless of kernel version without kernel patching (e.g. docker)
+- see wiki for notes on version compatibility
+
 ## `roslaunch` for D405
 
 Depth and RGB resolutions *have to* be manually set to same value for D405
