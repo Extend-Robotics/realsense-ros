@@ -7,9 +7,11 @@ The changes are in `extend` branch (default)
 ## librealsense2
 
 See `scripts/libuvc_installation.sh` for script
-- installing 2.51.1 with RSUSB backend.
+- installing 2.53.1 with RSUSB backend
+- this is variant that will build in 22.04
 - non ideal but should work regardless of kernel version without kernel patching (e.g. docker)
 - see wiki for notes on version compatibility
+  - this is yet another version, not officially tested with realsense-ros
 
 ## `roslaunch` for D405
 

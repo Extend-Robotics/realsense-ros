@@ -23,14 +23,16 @@ then
 	sudo swapon --show
 fi
 
+# 2.53.1 for 22.04 build compatibility, closest to 2.51.1 we want
+
 echo Installing Librealsense-required dev packages
 sudo apt-get install git cmake libssl-dev freeglut3-dev libusb-1.0-0-dev pkg-config libgtk-3-dev unzip -y
-rm -f ./v2.51.1.zip
+rm -f ./v2.53.1.zip
 
-wget https://github.com/IntelRealSense/librealsense/archive/refs/tags/v2.51.1.zip 
-unzip v2.51.1.zip -d .
+wget https://github.com/IntelRealSense/librealsense/archive/refs/tags/v2.53.1.zip 
+unzip v2.53.1.zip -d .
 
-cd ./librealsense-2.51.1
+cd ./librealsense-2.53.1
 
 echo Install udev-rules
 sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/ 
