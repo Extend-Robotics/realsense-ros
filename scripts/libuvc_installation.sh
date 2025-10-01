@@ -13,16 +13,6 @@ cd ~/
 sudo rm -rf ./librealsense_build
 mkdir librealsense_build && cd librealsense_build
 
-if [ $(sudo swapon --show | wc -l) -eq 0 ];
-then
-	echo "No swapon - setting up 1Gb swap file"
-	sudo fallocate -l 2G /swapfile
-	sudo chmod 600 /swapfile
-	sudo mkswap /swapfile
-	sudo swapon /swapfile
-	sudo swapon --show
-fi
-
 # 2.53.1 for 22.04 build compatibility, closest to 2.51.1 we want
 
 echo Installing Librealsense-required dev packages
